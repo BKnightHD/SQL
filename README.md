@@ -23,5 +23,3 @@ I'm currently working through the **Datacamp SQL Fundamentals** track, which cov
 ---
 
 **Purpose**: Personal learning and skill development in SQL and database management.
-
-Pull shark test
