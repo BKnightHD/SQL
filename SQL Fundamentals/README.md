@@ -6,20 +6,67 @@ This repository contains my coursework, notes, and projects from the Datacamp SQ
 
 This repository is organized by course modules, progressing from foundational SQL syntax to advanced topics in PostgreSQL and database architecture.
 
-## Modules
+## Unit 1: Introduction to SQL
 
-### 1. Introduction to SQL
-Foundational SQL concepts including:
-- Relational Databases
-- Querying
+### Meet Databases & SQL
+Understand what databases are, how they’re structured using tables, and how SQL is used to work with data.
 
-### 2. Intermediate SQL
-Building on fundamentals with:
-- Selecting Data
-- Filtering Records
-- Aggregate Functions
-- Sorting and Grouping
+### Write Your First SQL
+Write your first SQL queries to select, limit, sort, and retrieve top/bottom records from database tables.
 
+### Complete Your SQL Foundation
+Build a solid SQL foundation by handling unique values, renaming columns, understanding SQL flavors, and learning how databases work in practice.
+
+---
+
+## Unit 2: Intermediate SQL
+
+### Data Aggregation
+
+#### Summary Values
+Summarize data by calculating key statistics such as totals, averages, and counts to extract meaningful insights from raw data.
+
+#### One Grouping Column
+Break down summary statistics by categories to compare metrics across groups and uncover patterns.
+
+#### Multiple Grouping Columns
+Analyze data across multiple dimensions simultaneously to discover more nuanced patterns.
+
+---
+
+### Data Transformation
+
+#### Basic Transformations
+Create new columns by combining and calculating values from existing data to derive ratios and other derived metrics.
+
+#### Complex Transformations
+Handle multi-step calculations and compute percentages of totals to build metrics that rely on intermediate results.
+
+---
+
+### Data Filtering
+
+#### Basic Filtering
+Extract specific rows based on conditions to focus analysis on relevant subsets, including handling missing values and text patterns.
+
+#### Multiple Conditions
+Filter data using multiple criteria at once by combining conditions with AND / OR logic.
+
+#### Complex Filtering
+Simplify complex filtering by breaking conditions into separate columns and extracting inverse filter results for clearer, more verifiable analysis.
+
+---
+
+### Conditional Operations
+
+#### Conditional Transformation
+Apply different calculations based on specific conditions to standardize values, classify data, and handle varied scenarios.
+
+#### Conditional Aggregation
+Calculate summaries that include only values meeting specific criteria, such as computing the “average of delayed flights only” within each group.
+
+
+---
 ### 3. Joining Data in SQL
 Combining data from multiple tables:
 - Introduction to Inner Joins
