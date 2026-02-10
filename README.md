@@ -1,7 +1,7 @@
 # SQL Learning Repository
 
 This repository contains all my work, notes, and projects related to learning SQL.
-
+ 
 ## What's Inside 
 
 This is my central hub for SQL learning materials, including:
