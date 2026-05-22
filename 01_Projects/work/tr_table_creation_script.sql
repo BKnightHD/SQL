@@ -5,6 +5,8 @@
 -- Date         5-22-2026
 -- ==============================================
 
+-- Manually load dray table after runing this script
+
 USE transportation_report;
 
 -- 1. Create carrier table strcuture
@@ -95,8 +97,8 @@ DROP TABLE carrier_table_schema;
 
 -- 3. Create forwarders and spot tables
 CREATE TABLE forwarders (
-	effective_date 					    DATE,
-    end_date 							DATE,
+	effective_date 					    INT,
+    end_date 							INT,
     carrier_type                        VARCHAR(4), 								
 	carrier_forwarder_name 			    VARCHAR(10),						 
 	origin_continent 			        VARCHAR(15),
@@ -118,38 +120,7 @@ CREATE TABLE forwarders (
     );
 CREATE TABLE spot LIKE forwarders;
 
--- 4. Create dray table
-CREATE TABLE dray (
-    destination_cy_location         VARCHAR(32),
-    branch_destination              VARCHAR(32),
-    drop_live_unload                VARCHAR(11),
-    trucker                         VARCHAR(19),
-    dray_base_rate                  DECIMAL(6, 2),
-    drop_fee                        DECIMAL(5, 2),
-    fuel_surcharge_pct              DECIMAL(5, 4),
-    fuel_surcharge_amt              DECIMAL(6, 2),
-    total_dray_1                    DECIMAL(6, 2),
-    emergency_fuel_surcharge_pct    DECIMAL(5, 4),
-    emergency_fuel_surcharge_amt    DECIMAL(6, 2),
-    total_dray_2                    DECIMAL(6, 2),
-    diane_fuel_surcharge_pct        DECIMAL(5, 4),
-    diane_fuel_surcharge_amt        DECIMAL(6, 2),
-    total_dray_3                    DECIMAL(6, 2),
-    chassis_charge_per_day          DECIMAL(6, 2),
-    chassis_split_charge            DECIMAL(6, 2),
-    prepull                         DECIMAL(6, 2),
-    yard_storage_if_applicable      DECIMAL(6, 2),
-    free_hours                      VARCHAR(7),
-    per_hour_charge_after_free_time DECIMAL(6, 2),
-    layover_charge                  DECIMAL(5, 2),
-    stop_off_fee			        DECIMAL(5, 2),
-    toll_charge                     DECIMAL(5, 2),
-    port_congestion					DECIMAL(5, 2),
-    port_rail_driver_wait_time      VARCHAR(7),
-    port_rail_driver_chrg           DECIMAL(5, 2),
-    desc_of_misc_chrg               VARCHAR(100),
-    misc_chrg_not_mentioned         VARCHAR(100)
-);
+-- 4. Manually load dray table
 
 -- 5. Create origin table
 CREATE TABLE origin_chrgs (
