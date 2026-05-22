@@ -1,3 +1,49 @@
+-- ==============================================
+-- Script:      Practice Query
+-- Description: Drills for internalizing core SQL
+--              concepts 
+-- Author:      Brandon J. Knight
+-- ==============================================
+
+USE transportation_report;
+
+-- ----------------------------------------------
+-- 1. Inspect table structure
+-- ----------------------------------------------
+
+
+-- ----------------------------------------------
+-- 2. Append all carrier tables into a new table
+--    using UNION ALL to stack rows regardless 
+--    of duplicates
+-- ----------------------------------------------
+
+
+-- ----------------------------------------------
+-- 3. Select freight base charge columns and 
+--    return only rows where any of the three
+--    container sizes have a null value
+-- ----------------------------------------------
+
+
+-- ----------------------------------------------
+-- 4. Add arb charge columns to existing table
+--    positioned after their respective freight
+--    base charge columns
+-- ----------------------------------------------
+
+
+-- ----------------------------------------------
+-- 5. Populate arb columns by matching on the 
+--    three shared origin columns via LEFT JOIN
+-- ----------------------------------------------
+
+
+-- ----------------------------------------------
+-- 6. Convert excel serial dates to DD-MM-YYYY
+--    format on effective_date and end_date
+-- ----------------------------------------------
+
 SHOW COLUMNS FROM transportation_report;
 
 
